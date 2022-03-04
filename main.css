@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0px;
+}
+h1{
+    align-items: center;
+}
+#ficha-rpg{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    background: rgb(195,120,104);
+    background: -moz-radial-gradient(circle, rgba(195,120,104,1) 0%, rgba(8,42,120,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(195,120,104,1) 0%, rgba(8,42,120,1) 100%);
+    background: radial-gradient(circle, rgba(195,120,104,1) 0%, rgba(8,42,120,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#c37868",endColorstr="#082a78",GradientType=1);
+}
+
+.container{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 1000px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid rgba(8,42,120,1);
+    display: flex;
+    flex-direction: column;
+}
+.container h1{
+    margin: auto;
+    margin-top: 20px;
+    background: -webkit-linear-gradient(#c37868,#5618ac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Righteous', cursive;
+}
+
+#ficha-rpg .container form{
+    margin: 20px;
+    display: flex;
+
+}
+#ficha-rpg .container form div{
+    flex: 1;
+}
+.inf-jogador h2, .inf-atributos h2,.enviar{
+    background: -webkit-linear-gradient(#c37868,#5618ac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;   
+    display: flex;
+    justify-content: center;
+    border: 2px solid #ccc;
+    margin: 10px;
+    font-family: 'Righteous', cursive;
+}
+.inf-jogador, .inf-atributos{
+    border: 2px solid #ccc;
+    margin: 10px;
+}
+.atributos{
+    display: flex;
+}
+.atributos label{
+    margin: 10px;
+    display: block;
+}
+.atributos input{
+    margin-left: 10px;
+}
+input, textarea{
+    border: 2px solid #ccc;
+}
+
+.inf-atributos label{
+    margin-bottom: 5px;
+    margin-left: 10px;
+    display: block;
+}
+.raca-selecao label{
+    display: inline;
+}
+#nome,#aparencia,#idade,#altura,#peso,#historia{
+    margin-left: 10px;
+}
+#historia{
+    margin-top: 20px;
+    height: 200px;
+}
+.cont-elemento{
+    margin-bottom: 30px;
+}
+textarea{
+    width: 430px;
+    resize: none;
+}
+label{
+    font-size:30px;
+    font-family: 'Amatic SC', cursive;
+    
+}
+
+.enviar{
+    height: 50px;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+@media (max-width: 1000px){
+    .box-atributos form{
+        display: flex;
+        flex-direction: column;
+    }
+    .container{
+        width: 600px;
+    }
+    textarea{
+        width: 514px;
+        height: 300px;
+    }
+}
+@media (max-width:600px){
+    .container{
+        width: 320px;
+    }
+    textarea{
+        width: 234px;
+        height: 300px;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+    .atributos{
+        flex-direction: column;
+    }
+    .raca-selecao label{
+        font-size: 20px;
+    }
+}

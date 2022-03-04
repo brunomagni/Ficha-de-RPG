@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Ficha de RPG</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="ficha-rpg">
+        <div class="container">
+            <h1>Ficha de rpg</h1>
+            <div class="box-atributos">
+                <form action="..." method="get">
+                    <div class="inf-atributos">
+                        <h2>Jogador</h2>
+                        <div class="cont-elemento">
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" autofocus required>
+                        </div>
+                        <div class="cont-elemento">
+                            <label>Raça:</label>
+                            <div class="raca-selecao">
+                                <label for="elfo" value="elfo">Elfo</label>
+                                <input type="radio" id="elfo" value="elfo" name="raca" required>
+                                <label for="humano" value="humano">Humano</label>
+                                <input type="radio" id="humano" value="humano" name="raca">
+                                <label for="ogro" value="ogro">Ogro</label>
+                                <input type="radio" id="ogro" value="ogro" name="raca">
+                                <label for="anao" value="anao">Anão</label>
+                                <input type="radio" id="anao" value="anao" name="raca">
+                            </div>
+                        </div>
+                        <div class="cont-elemento">
+                            <label for="aparencia">Aparencia:</label>
+                            <textarea id="aparencia" name="aparencia"
+                                placeholder="Descrição detalhada da aparencia física do seu personagem e suas peculiaridades."></textarea>
+                        </div>
+                        <div class="cont-elemento">
+                            <label for="idade" value="idade">Idade:</label>
+                            <input type="number" id="idade" value="idade">
+                        </div>
+                        <div class="cont-elemento">
+                            <label for="altura" value="altura">Altura:</label>
+                            <input type="number" id="altura" value="altura">
+                        </div>
+                        <div class="cont-elemento">
+                            <label for="peso" value="peso">Peso:</label>
+                            <input type="number" id="peso" value="peso">
+                        </div>
+                    </div>
+                    <div class="inf-jogador">
+                        <h2>Atributos</h2>
+                        <div class="atributos">
+                            <div>
+                                <label for="def-m" value="def-m">DesM</label>
+                                <input type="number" id="def-m" value="def-m">
+                                <label for="def-f" value="def-f">DefF</label>
+                                <input type="number" id="def-f" value="def-f">
+                                <label>Car</label>
+                                <input type="number" id="car" value="car">
+                                <label>Des</label>
+                                <input type="number" id="des" value="des">
+                            </div>
+                            <div>
+                                <label>Atk</label>
+                                <input type="number" id="atk" value="atk">
+                                <label>Vig</label>
+                                <input type="number" id="vig" value="vig">
+                                <label>Int</label>
+                                <input type="number" id="int" value="int">
+                                <label>Sab</label>
+                                <input type="number" id="sab" value="sab">
+                            </div>
+                        </div>
+                        <h2>Historia</h2>
+                        <textarea name="historia" id="historia" placeholder="Conte-me sobre você..."></textarea>
+                    </div>
+ 
+            </div>
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
+        </div>
+    </section>
+</body>
+
+</html>
